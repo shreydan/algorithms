@@ -7,6 +7,7 @@ Explanation: https://en.wikipedia.org/wiki/Selection_sort
 Time Complexity:
 Worst Case: O(n^2)
 Best Case: O(n^2)
+Average Case: O(n^2)
 
 */
 
