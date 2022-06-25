@@ -11,7 +11,7 @@ Average Case: O(n^2)
 
 */
 
-void bubble_sort(int *arr, int size, char order)
+void bubble_sort(float *arr, int size, char order)
 {
 
     if (order == 'i')
@@ -22,7 +22,7 @@ void bubble_sort(int *arr, int size, char order)
             {
                 if (arr[j] > arr[j + 1])
                 {
-                    int temp = arr[j];
+                    float temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
@@ -38,18 +38,24 @@ void bubble_sort(int *arr, int size, char order)
             {
                 if (arr[j] < arr[j + 1])
                 {
-                    int temp = arr[j];
+                    float temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
             }
+
+            for(int k=0;k<size;k++){
+                printf("%f\t",arr[k]);
+            }
+            printf("\n");
+
         }
     }
 }
 
 int main()
 {
-    int a[5] = {4, 5, 1, 9, 3};
-    bubble_sort(a, 5, 'i');
+    float a[6] = {99.7,88.5,90.1,91.0,85.8,97.9};
+    bubble_sort(a, 6, 'd');
     return 0;
 }
